@@ -22,7 +22,7 @@ var api = new ParseServer({
   javascriptKey: process.env.JAVASCRIPT_KEY || 'denrJavascriptKey',
   serverURL: process.env.SERVER_URL || 'https://erdbftrrctally.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
-    classNames: ["_User", "Client", "Todo"] // List of classes to support for query subscriptions
+    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
