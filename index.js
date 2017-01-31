@@ -16,6 +16,10 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'denrAppId',
   masterKey: process.env.MASTER_KEY || 'denrMasterKey', //Add your master key here. Keep it secret!
+  restAPIKey: process.env.REST_API_KEY || 'denrRestAPIrKey',
+  dotNetKey: process.env.DOT_NET_KEY || 'denrDotNetKey',
+  clientKey: process.env.CLIENT_KEY || 'denrClientKey',
+  javascriptKey: process.env.JAVASCRIPT_KEY || 'denrJavascriptKey',
   serverURL: process.env.SERVER_URL || 'https://erdbftrrctally.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["_User", "Client", "Todo"] // List of classes to support for query subscriptions
